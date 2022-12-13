@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/mvc/Controller"],function(e){"use strict";return e.extend("lr.de.website.controller.Home",{onInit:function(){let e=this.byId("ObjectPageLayout");e.setShowFooter(!e.getShowFooter())}})});

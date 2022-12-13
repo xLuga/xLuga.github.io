@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/library","sap/uxap/BlockBase"],function(e,i){"use strict";var a=e.mvc.ViewType;var t=i.extend("lr.de.website.blocks.fiori_entwicklung",{metadata:{views:{Collapsed:{viewName:"lr.de.website.blocks.fiori_entwicklung",type:a.XML},Expanded:{viewName:"lr.de.website.blocks.fiori_entwicklung",type:a.XML}}}});return t});

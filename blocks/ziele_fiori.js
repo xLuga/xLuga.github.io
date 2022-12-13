@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/library","sap/uxap/BlockBase"],function(e,i){"use strict";var a=e.mvc.ViewType;var r=i.extend("lr.de.website.blocks.ziele_fiori",{metadata:{views:{Collapsed:{viewName:"lr.de.website.blocks.ziele_fiori",type:a.XML},Expanded:{viewName:"lr.de.website.blocks.ziele_fiori",type:a.XML}}}});return r});
