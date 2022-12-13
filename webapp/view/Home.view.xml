@@ -1,0 +1,124 @@
+<mvc:View controllerName="lr.de.website.controller.Home" displayBlock="true" xmlns:m="sap.m" xmlns="sap.uxap" xmlns:mvc="sap.ui.core.mvc" xmlns:layout="sap.ui.layout" xmlns:ziele="lr.de.website.blocks" xmlns:w="sap.ui.integration.widgets">
+    <ObjectPageLayout id="ObjectPageLayout" showTitleInHeaderContent="true" showEditHeaderButton="true" upperCaseAnchorBar="false">
+        <headerContent>
+            <m:FlexBox wrap="Wrap">
+                <m:Avatar class="sapUiSmallMarginEnd" src="./img/ich.jpg" displaySize="XL" />
+                <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
+                    <m:VBox class="sapUiSmallMarginBeginEnd">
+                        <m:HBox>
+                            <!-- class="sapUiSmallMarginBegin" -->
+                            <m:Image src="./img/twitter.png" />
+                            <m:Link href="https://twitter.com/TheRealLuga" text="@TheRealLuga" class="sapUiSmallMarginBegin" />
+                        </m:HBox>
+                        <m:HBox>
+                            <m:Image src="./img/github.png" />
+                            <m:Link href="https://github.com/xLuga?tab=repositories" text="xLuga" class="sapUiSmallMarginBegin" />
+                        </m:HBox>
+                        <m:HBox>
+                            <m:Image src="./img/linkedin.png" />
+                            <m:Link href="https://www.linkedin.com/in/lukas-rausch-158a69250/" text="Lukas Rausch" class="sapUiSmallMarginBegin" />
+                        </m:HBox>
+                        <m:HBox>
+                            <m:Image src="./img/whatsapp.png" />
+                            <m:Link text="+49 151 688 06 766" class="sapUiSmallMarginBegin" />
+                        </m:HBox>
+                        <m:HBox>
+                            <m:Image src="./img/email.png" />
+                            <m:Link text="lukas_rausch@gmx.de" class="sapUiSmallMarginBegin" />
+                        </m:HBox>
+                    </m:VBox>
+                </layout:VerticalLayout>
+
+                <layout:VerticalLayout>
+                    <layout:content>
+                        <m:Text text="Hallo, mein Name ist Lukas Rausch und ich bin aktuell 25 Jahre alt." />
+                        <m:Text text="Ich arbeite jetzt seit ca. 8 Jahren im SAP Umfeld und entwickle SAP Anwendungen." />
+                        <m:Text text="Seit neuestem bin ich auch im UI5 Umfeld tätig, weil mir dieses Themengebiet riesig Spaß bereitet." />
+                    </layout:content>
+                </layout:VerticalLayout>
+            </m:FlexBox>
+        </headerContent>
+        <headerTitle>
+            <ObjectPageDynamicHeaderTitle>
+                <breadcrumbs>
+                    <m:Breadcrumbs currentLocationText="Die Seite wurde mit OpenUi5 entworfen" />
+                </breadcrumbs>
+                <expandedHeading>
+                    <m:HBox>
+                        <m:Title text="Lukas Rausch" wrapping="true" />
+                        <m:ObjectMarker type="Favorite" class="sapUiTinyMarginBegin" />
+                    </m:HBox>
+                </expandedHeading>
+                <snappedHeading>
+                    <m:FlexBox fitContainer="true" alignItems="Center">
+                        <m:Avatar src="./img/ich.jpg" class="sapUiTinyMarginEnd" />
+                        <m:Title text="Lukas Rausch" wrapping="true" />
+                    </m:FlexBox>
+                </snappedHeading>
+                <expandedContent>
+                    <m:Text text="Senior Entwickler - Fulda, DE" />
+                </expandedContent>
+                <snappedContent>
+                    <m:Text text="Senior Entwickler - Fulda, DE" />
+                </snappedContent>
+                <snappedTitleOnMobile>
+                    <m:Title text="Senior Entwickler - Fulda, DE" />
+                </snappedTitleOnMobile>
+            </ObjectPageDynamicHeaderTitle>
+        </headerTitle>
+        <landmarkInfo />
+        <sections>
+            <ObjectPageSection titleUppercase="false" id="goalsSection" title="Ziele 2022" importance="Medium">
+                <subSections>
+                    <ObjectPageSubSection id="goalsSectionSS1" title="Berufliche Ziele">
+                        <actions>
+                            <m:MessageStrip text="Ziele werden regelmäßig angepasst!" type="Error" />
+                        </actions>
+                        <blocks>
+                            <ziele:ziele_fiori columnLayout="1" />
+                            <ziele:ziele_sap columnLayout="1" />
+                            <ziele:ziele_daheim columnLayout="1" />
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+            <ObjectPageSection titleUppercase="false" id="erfahrungen" title="Bisherige Erfahrungen" importance="Medium">
+                <subSections>
+                    <ObjectPageSubSection id="expSectionSS1" title="Fiori">
+                        <blocks>
+                            <ziele:fiori_entwicklung columnLayout="1" />
+                        </blocks>
+                    </ObjectPageSubSection>
+                    <ObjectPageSubSection id="expSectionSS2" title="SAP">
+                        <blocks>
+                            <ziele:sap_abap columnLayout="1" />
+                            <ziele:sap_module columnLayout="1" />
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+
+            <ObjectPageSection titleUppercase="false" title="Sonstiges" importance="Medium">
+                <subSections>
+                    <ObjectPageSubSection id="firmenSectionSS1" title="Sonstiges">
+                        <blocks>
+                            <m:FlexBox>
+                                <w:Card manifest="./cards/manifest_firmen.json" class="sapUiSmallMarginBeginEnd" />
+
+                                <w:Card manifest="./cards/manifest_hobbies.json" class="sapUiSmallMarginBeginEnd" />
+                            </m:FlexBox>
+                        </blocks>
+                    </ObjectPageSubSection>
+                </subSections>
+            </ObjectPageSection>
+        </sections>
+        <footer>
+            <m:OverflowToolbar asyncMode="false">
+                <m:ToolbarSpacer />
+                <m:Label text="Lukas Rausch" />
+                <m:ToolbarSpacer />
+                <m:Button text="Contact me" />
+            </m:OverflowToolbar>
+        </footer>
+    </ObjectPageLayout>
+</mvc:View>

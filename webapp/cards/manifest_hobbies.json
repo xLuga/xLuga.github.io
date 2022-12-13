@@ -1,0 +1,87 @@
+{
+	"_version": "1.14.0",
+	"sap.app": {
+		"id": "lr.de.website.hobbies",
+		"type": "card",
+		"title": "Meine Hobbies",
+		"subTitle": "Meine Hobbies",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"shortTitle": "Meine Hobbies",
+		"info": "Meine Hobbies",
+		"description": "Meine Hobbies",
+		"tags": {
+			"keywords": [
+				"List",
+				"Highlight",
+				"Card",
+				"Sample"
+			]
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "sap-icon://activities"
+		}
+	},
+	"sap.card": {
+		"type": "List",
+		"header": {
+			"title": "{parameters>/title/value}",
+			"subTitle": "{parameters>/subTitle/value}",
+			"icon": {
+				"src": "sap-icon://activities"
+			},
+			"status": {
+				"text": ""
+			}
+		},
+		"configuration": {
+			"editor": "dt/Configuration",
+			"parameters": {
+				"title" : {
+					"value": "Meine Hobbies"
+				},
+				"subTitle": {
+					"value": ""
+				},
+				"maxItems": {
+					"value": 4
+				}
+			}
+		},
+		"content": {
+			"data": {
+				"json": [{
+						"Name": "Kraftsport",
+                        "Description": "FitStop Fulda",
+                        "icon": "sap-icon://activity-2"
+					},
+					{
+						"Name": "Videospiele",
+						"Description": "aktuell Valorant",
+                        "icon": "sap-icon://activity-2"
+					},
+					{
+						"Name": "SnowBoard fahren",
+						"Description": "Neuling",
+                        "icon": "sap-icon://activity-2"
+					},
+					{
+						"Name": "Lesen/Weiterbilden",
+						"Description": "Am liebsten Sachbücher",
+                        "icon": "sap-icon://activity-2"
+					}
+				]
+			},
+			"maxItems": "{parameters>/maxItems/value}",
+			"item": {
+				"title": "{Name}",
+                "description": "{Description}",
+                "icon": "{icon}"
+			}
+		}
+	}
+}
