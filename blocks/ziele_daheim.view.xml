@@ -4,7 +4,7 @@
         <Label text="Andere Frameworks kennenlernen" />
         <Text text="Im Laufe der Jahre" />
 
-        <Label text="Aktive auf Git sein" />
+        <Label text="Aktiver auf Git sein" />
         <Text text="Ab Sofort" />
     </forms:SimpleForm>
 </mvc:View>

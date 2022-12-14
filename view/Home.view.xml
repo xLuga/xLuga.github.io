@@ -6,7 +6,6 @@
                 <layout:VerticalLayout class="sapUiSmallMarginBeginEnd">
                     <m:VBox class="sapUiSmallMarginBeginEnd">
                         <m:HBox>
-                            <!-- class="sapUiSmallMarginBegin" -->
                             <m:Image src="./img/twitter.png" />
                             <m:Link href="https://twitter.com/TheRealLuga" text="@TheRealLuga" class="sapUiSmallMarginBegin" />
                         </m:HBox>
@@ -33,7 +32,7 @@
                     <layout:content>
                         <m:Text text="Hallo, mein Name ist Lukas Rausch und ich bin aktuell 25 Jahre alt." />
                         <m:Text text="Ich arbeite jetzt seit ca. 8 Jahren im SAP Umfeld und entwickle SAP Anwendungen." />
-                        <m:Text text="Seit neuestem bin ich auch im UI5 Umfeld tätig, weil mir dieses Themengebiet riesig Spaß bereitet." />
+                        <m:Text text="Seit neuestem bin ich auch im UI5 Umfeld tätig, weil mir dieses Themengebiet riesigen Spaß bereitet." />
                     </layout:content>
                 </layout:VerticalLayout>
             </m:FlexBox>
